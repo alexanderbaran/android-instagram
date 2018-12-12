@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="1dp">
+
+    <!-- We want the border on the bottom, so we set the top to -1. These negatives will make it not show up.
+    The only one that is going to show up is the one on the bottom. Ø: These look to be as the position absolute in css,
+    except they maybe stretch too? -->
+    <item
+        android:bottom="1dp"
+        android:top="-1dp"
+        android:right="-1dp"
+        android:left="-1dp">
+
+        <!-- Ø: The borders of the rectangle is what border bottom will be in the end with only bottom portion of the rectangle border showing.
+        There is no width or height on the shape. -->
+        <shape
+            android:shape="rectangle">
+
+            <!-- The border. -->
+            <!-- The colors are in the folder values/colors.xml, can add custom colors. -->
+            <stroke
+                android:width="1dp"
+                android:color="@color/grey" />
+
+            <solid
+                android:color="@color/white" />
+
+        </shape>
+
+    </item>
+
+</layer-list>
